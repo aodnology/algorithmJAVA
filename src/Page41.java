@@ -1,6 +1,6 @@
 import java.util.Scanner;
 // 백준 1546
-public class Page_41 {
+public class Page41 {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         // 시험 본 과목 갯수
