@@ -7,9 +7,12 @@ import java.util.StringTokenizer;
 public class Page62 {
     public static void main(String[] args) throws IOException {
         BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
+        System.out.printf("재료의 개수 : ");
         int N = Integer.parseInt(bf.readLine());
+        System.out.printf("갑옷이 완성되는 번호의 합 : ");
         int M = Integer.parseInt(bf.readLine());
         int[] A = new int[N];
+        System.out.printf("재료(공백을 두고 입력) : ");
         StringTokenizer st = new StringTokenizer(bf.readLine());
         for (int i = 0; i < N; i++) {
             A[i] = Integer.parseInt(st.nextToken());
@@ -29,7 +32,7 @@ public class Page62 {
                 j--;
             }
         }
-        System.out.println(count);
+        System.out.println("만들 수 있는 갑옷의 개수 : " + count);
         bf.close();
     }
 }
